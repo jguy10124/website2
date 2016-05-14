@@ -35,8 +35,22 @@
         <form action="welcome.php" method="post">
         Name: <input type="text" name="name"><br>
         E-mail: <input type="text" name="email"><br>
-        <input type="submit">
+        <input type="submit"><br><br>
         </form>
+
+        <b>More information<b> <br><br>
+        <form action="valid.php" method ="post">
+        Favorite Animal:
+        <input type = "text" name = "animal">
+        <span class = "error">* <?php echo $animalErr;?></span> <br>
+        Favorite Color: <input type = "text" name = "color">
+        <span class = "error">* <?php echo $colorErr;?></span><br>
+        Gender:
+            <input type = "radio" name = "gender" value = "Cat">Cat
+            <input type = "radio" name = "gender" value = "Potato">Potato <br>
+        Comment: <textarea name = "comment" rows = "5" cols = "40"></textarea><br>
+        <input type="submit"><br><br>
+    </form>
 
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
